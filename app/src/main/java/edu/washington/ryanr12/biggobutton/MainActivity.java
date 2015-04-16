@@ -15,13 +15,14 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        numClicks = 0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bigButton = (Button) findViewById(R.id.bigButton);
         bigButton.setOnClickListener( new Button.OnClickListener() {
             public void onClick(View v) {
-                bigButton.setText("You have clicked me " + numClicks + " times!");
                 numClicks++;
+                bigButton.setText("You have clicked me " + numClicks + " times!");
             }
         });
         numClicks = 0;
