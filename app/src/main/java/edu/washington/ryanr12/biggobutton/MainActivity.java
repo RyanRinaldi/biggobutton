@@ -35,10 +35,6 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
-    public void onButtonClick(View v) {
-
-    }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
